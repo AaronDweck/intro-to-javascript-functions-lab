@@ -108,17 +108,10 @@ Complete the exercise in the space below:
 */
 
 function maxOfThree(num1, num2, num3){
-    if (num1 >= num2 && num1 >= num3) {
-        return num1
-    } else if (num2 >= num1 && num2 >= num3) {
-        return num2
-    } else {
-        return num3
-    }        
-    
+    return Math.max(num1, num2, num3)
 }
 
-console.log('Exercise 6 Result:', maxOfThree(11, 12, 12));
+console.log('Exercise 6 Result:', maxOfThree(11, 202, 12));
 
 /*
 Exercise 7: calculateTip()
@@ -192,7 +185,7 @@ function basicCalculator(num1, num2, operation){
     }else if (operation === 'multiply'){
         return num1 * num2
     }else if (operation === 'divide'){
-        if (num2 == 0){
+        if (num2 === 0){
             return "Can't divide by zero"
         } else{
             return num1 / num2
